@@ -1,0 +1,124 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/mark/C#/Project/Lab1.Tests/Lab1.Tests.csproj": {}
+  },
+  "projects": {
+    "/home/mark/C#/Project/Lab1.Tests/Lab1.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/mark/C#/Project/Lab1.Tests/Lab1.Tests.csproj",
+        "projectName": "Lab1.Tests",
+        "projectPath": "/home/mark/C#/Project/Lab1.Tests/Lab1.Tests.csproj",
+        "packagesPath": "/home/mark/.nuget/packages/",
+        "outputPath": "/home/mark/C#/Project/Lab1.Tests/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/home/mark/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "/home/mark/C#/Project/Lab1/Lab1.csproj": {
+                "projectPath": "/home/mark/C#/Project/Lab1/Lab1.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[15.9.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[3.11.0, )"
+            },
+            "nunit": {
+              "target": "Package",
+              "version": "[3.11.0, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "/home/mark/C#/Project/Lab1/Lab1.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/mark/C#/Project/Lab1/Lab1.csproj",
+        "projectName": "Lab1",
+        "projectPath": "/home/mark/C#/Project/Lab1/Lab1.csproj",
+        "packagesPath": "/home/mark/.nuget/packages/",
+        "outputPath": "/home/mark/C#/Project/Lab1/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/home/mark/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

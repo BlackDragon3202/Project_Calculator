@@ -1,0 +1,17 @@
+/home/mark/C#/Project/Lab1.Tests/obj/Debug/netcoreapp2.2/Lab1.Tests.csprojAssemblyReference.cache
+/home/mark/C#/Project/Lab1.Tests/obj/Debug/netcoreapp2.2/Lab1.Tests.csproj.CoreCompileInputs.cache
+/home/mark/C#/Project/Lab1.Tests/obj/Debug/netcoreapp2.2/Lab1.Tests.AssemblyInfoInputs.cache
+/home/mark/C#/Project/Lab1.Tests/obj/Debug/netcoreapp2.2/Lab1.Tests.AssemblyInfo.cs
+/home/mark/C#/Project/Lab1.Tests/bin/Debug/netcoreapp2.2/NUnit3.TestAdapter.dll
+/home/mark/C#/Project/Lab1.Tests/bin/Debug/netcoreapp2.2/NUnit3.TestAdapter.pdb
+/home/mark/C#/Project/Lab1.Tests/bin/Debug/netcoreapp2.2/nunit.engine.netstandard.dll
+/home/mark/C#/Project/Lab1.Tests/bin/Debug/netcoreapp2.2/Lab1.Tests.deps.json
+/home/mark/C#/Project/Lab1.Tests/bin/Debug/netcoreapp2.2/Lab1.Tests.runtimeconfig.json
+/home/mark/C#/Project/Lab1.Tests/bin/Debug/netcoreapp2.2/Lab1.Tests.runtimeconfig.dev.json
+/home/mark/C#/Project/Lab1.Tests/bin/Debug/netcoreapp2.2/Lab1.Tests.dll
+/home/mark/C#/Project/Lab1.Tests/bin/Debug/netcoreapp2.2/Lab1.Tests.pdb
+/home/mark/C#/Project/Lab1.Tests/bin/Debug/netcoreapp2.2/Lab1.dll
+/home/mark/C#/Project/Lab1.Tests/bin/Debug/netcoreapp2.2/Lab1.pdb
+/home/mark/C#/Project/Lab1.Tests/obj/Debug/netcoreapp2.2/Lab1.Tests.csproj.CopyComplete
+/home/mark/C#/Project/Lab1.Tests/obj/Debug/netcoreapp2.2/Lab1.Tests.dll
+/home/mark/C#/Project/Lab1.Tests/obj/Debug/netcoreapp2.2/Lab1.Tests.pdb
