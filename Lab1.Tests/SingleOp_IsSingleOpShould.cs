@@ -11,9 +11,9 @@ namespace Tests
         {
             SingleOp op = new SingleOp();
             var result = op.Sqrt(4);
-           Assert.AreEqual(result, 2);
-            }
-        
+            Assert.AreEqual(result, 2);
+        }
+
         [Test]
         public void Abs_InputIsMinus4_Return4()
         {

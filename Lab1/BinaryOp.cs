@@ -13,51 +13,63 @@ namespace Lab1
         public Double Add(Double first, Double second)
         {
             return first + second;
-            
+
         }
-/// <summary>
-/// Действие над переменными, которое выбирает пользователь.
-/// </summary>
-/// <param name="currentVar"></param>
-/// <param name="secondVar"></param>
-/// <returns>Возвращает результат операции</returns>
-        public Double Action(Double currentVar, Double secondVar) {
+        /// <summary>
+        /// Действие над переменными, которое выбирает пользователь.
+        /// </summary>
+        /// <param name="currentVar"></param>
+        /// <param name="secondVar"></param>
+        /// <returns>Возвращает результат операции</returns>
+        public Double Action(Double currentVar, Double secondVar)
+        {
             Double answer = currentVar;
             Boolean check = true;
-            while (check) {
+            while (check)
+            {
                 string act = Console.ReadLine();
                 check = false;
-                switch(act) {
+                switch (act)
+                {
                     case "+":
-                    answer = Add(currentVar, secondVar);
-                   // check = false;
-                    break;
+                        answer = Add(currentVar, secondVar);
+                        // check = false;
+                        break;
                     case "-":
-                    answer = Minus(currentVar, secondVar);
-                    //check = false;
-                    break;
+                        answer = Minus(currentVar, secondVar);
+                        //check = false;
+                        break;
                     case "*":
-                    answer = Mult(currentVar, secondVar);
-                   // check = false;
-                    break;
+                        answer = Mult(currentVar, secondVar);
+                        // check = false;
+                        break;
                     case "/":
-                    answer = Div(currentVar, secondVar);
-                   // check = false;
-                    break;
+                        answer = Div(currentVar, secondVar);
+                        // check = false;
+                        break;
+                    case "//":
+                        answer = Strong_Div(currentVar, secondVar);
+                        break;
+                    case "A":
+                        answer = Per(currentVar, secondVar);
+                        break;
+                    case "C":
+                        answer = C(currentVar, secondVar);
+                        break;
                     case "^":
-                    answer = Pow(currentVar, secondVar);
-                   // check = false;
-                    break;
+                        answer = Pow(currentVar, secondVar);
+                        // check = false;
+                        break;
                     case "%":
-                    answer = Mod(currentVar, secondVar);
-                   // check = false;
-                    break;
+                        answer = Mod(currentVar, secondVar);
+                        // check = false;
+                        break;
                     default:
-                    check = true;
-                    break;
+                        check = true;
+                        break;
                 }
             }
-             return answer;
+            return answer;
 
         }
 
@@ -67,16 +79,33 @@ namespace Lab1
         /// <param name="first"></param>
         /// <param name="second"></param>
         /// <returns> Возвращает разность чисел</returns>
-        public Double Minus(Double first, Double second) {
+        public Double Minus(Double first, Double second)
+        {
             return first - second;
-        } 
+        }
+
+        public Double Strong_Div(Double first, Double second)
+        {
+            return Math.Floor(Div(first, second));
+        }
+        public Double Per(Double first, Double second)
+        {
+            SingleOp singleop = new SingleOp();
+            return (singleop.Fact(first)) / (singleop.Fact(first - second));
+        }
+        public Double C(Double first, Double second)
+        {
+            SingleOp singleop = new SingleOp();
+            return (singleop.Fact(first)) / (singleop.Fact(second) * singleop.Fact(first - second));
+        }
         /// <summary>
         /// Умножение
         /// </summary>
         /// <param name="first"></param>
         /// <param name="second"></param>
         /// <returns>Возвращает произведение</returns>
-        public Double Mult(Double first, Double second) {
+        public Double Mult(Double first, Double second)
+        {
             return first * second;
         }
         /// <summary>
@@ -85,7 +114,8 @@ namespace Lab1
         /// <param name="first"></param>
         /// <param name="second"></param>
         /// <returns>Возвращает частное</returns>
-        public Double Div(Double first, Double second) {
+        public Double Div(Double first, Double second)
+        {
             return first / second;
         }
         /// <summary>
@@ -95,7 +125,8 @@ namespace Lab1
         /// <param name="first"></param>
         /// <param name="second"></param>
         /// <returns>Возвращает результат</returns>
-        public Double Pow(Double first, Double second) {
+        public Double Pow(Double first, Double second)
+        {
             return Math.Pow(first, second);
         }
         /// <summary>
@@ -104,8 +135,9 @@ namespace Lab1
         /// <param name="first"></param>
         /// <param name="second"></param>
         /// <returns>ВОзвращает остаток от деления</returns>
-        public Double Mod(Double first, Double second) {
-           return first % second;
-       }
+        public Double Mod(Double first, Double second)
+        {
+            return first % second;
+        }
     }
 }

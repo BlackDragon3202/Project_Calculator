@@ -20,7 +20,7 @@ namespace Tests
             var result = op.Div(6, 2);
             Assert.AreEqual(result, 3);
         }
-        
+
         [Test]
         public void Minus_InputIs5And2_Return3()
         {
