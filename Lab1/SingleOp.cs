@@ -23,6 +23,24 @@ namespace Lab1
                         answer = Abs(variable);
                         // check = false;
                         break;
+                    case "-":
+                        answer = Minus(variable);
+                        break;
+                    case "+":
+                        answer = Plus(variable);
+                        break;
+                    case "++":
+                        answer = Increment(variable);
+                        break;
+                    case "Sin":
+                        answer = Sinus(variable);
+                        break;
+                    case "Cos":
+                        answer = Cos(variable);
+                        break;
+                    case "--":
+                        answer = Decrement(variable);
+                        break;
                     case "Fact":
                         answer = Fact(variable);
                         //check = false;
@@ -38,13 +56,49 @@ namespace Lab1
             }
             return answer;
         }
-       
+
+        public Double Minus(Double variable)
+        {
+            if (variable > 0)
+            {
+                return -1 * variable;
+            }
+            return variable;
+        }
+        public Double Sinus(Double variable)
+        {
+            return Math.Sin(variable);
+        }
+        public Double Cos(Double variable)
+        {
+            return Math.Cos(variable);
+        }
+
+        public Double Increment(Double variable)
+        {
+            return ++variable;
+        }
+        public Double Decrement(Double variable)
+        {
+            return --variable;
+        }
+
+        public Double Plus(Double variable)
+        {
+            if (variable < 0)
+            {
+                return -1 * variable;
+            }
+            return variable;
+        }
+
 
         /// <summary>
         /// Корень числа
         /// </summary>
         /// <param name="variable"></param>
         /// <returns>Возвращает корень числа</returns>
+
         public Double Sqrt(Double variable)
         {
             return Math.Sqrt(variable);
