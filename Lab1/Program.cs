@@ -54,7 +54,14 @@ namespace Lab1
                         currentVar = op.Action(currentVar);
 
                         break;
-
+                    case "Multiple": 
+                        List<Double> list = new List<Double>();
+                        foreach (Double var in queue) {
+                            list.Add(var);
+                        }
+                        MultipleOp multipleOp = new MultipleOp();
+                        multipleOp.Action(currentVar, list);
+                        break;
                     case "Binary":
                         BinaryOp binOp = new BinaryOp();
                         Double secondVar;
