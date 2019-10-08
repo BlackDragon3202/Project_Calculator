@@ -1,5 +1,5 @@
 ﻿using System;
-
+using System.Collections.Generic;
 namespace Lab1
 {
     public class Program
@@ -17,6 +17,8 @@ namespace Lab1
             Boolean flag = true;
             string state = "";
             string str;
+            Queue<Double> queue = new Queue<Double>();
+    
             while (flag) {
             Console.WriteLine("Hello, do you want to choose option?");
             string option = Console.ReadLine();
@@ -24,6 +26,20 @@ namespace Lab1
                 state = Console.ReadLine();
             }
             switch(state) {
+                case "Add":
+                    while (true) {
+                        Console.WriteLine("Enter value");
+                        str = Console.ReadLine();
+                        if (Program.Check(str)) {
+                            queue.Enqueue(Double.Parse(str));
+                        } 
+                        Console.WriteLine("Do you want to stop?");
+                        str = Console.ReadLine();
+                        if (str.Equals("Yes") ) {
+                            break;
+                        }
+                    }
+                    break;
                 case "Single":
                     SingleOp op = new SingleOp();
                    
@@ -34,16 +50,17 @@ namespace Lab1
 
                 case "Binary":
                     BinaryOp binOp = new BinaryOp();
-                    Console.WriteLine("Enter a second variable");
-                    str = Console.ReadLine();
+               //     Console.WriteLine("Enter a second variable");
+                 //   str = Console.ReadLine();
                     Double secondVar;
-                    if (Program.Check(str)) {
-                        secondVar = Double.Parse(str);
-                    } else {
-                        return;
-                    }      
+                    //if (Program.Check(str)) {
+                    //    secondVar = Double.Parse(str);
+                  //  } else {
+                     //   return;
+                   // }       
+                    secondVar = queue.Dequeue();
                     currentVar = binOp.Action(currentVar, secondVar);
-                break;
+                    break;
                
                 case "Exit":
                     flag = false;
