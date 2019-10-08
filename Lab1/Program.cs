@@ -15,23 +15,18 @@ namespace Lab1
         {
             Double currentVar = 0;
             Boolean flag = true;
+            string state = "";
             string str;
             while (flag) {
-            Console.WriteLine("Hello, choose your option");
-            string answer = Console.ReadLine();
-            switch(answer) {
+            Console.WriteLine("Hello, do you want to choose option?");
+            string option = Console.ReadLine();
+            if (option.Equals("Yes")) {
+                state = Console.ReadLine();
+            }
+            switch(state) {
                 case "Single":
                     SingleOp op = new SingleOp();
-                    Console.WriteLine("Use new or old data?");
-                    string action = Console.ReadLine();
-                    if (action.Equals("New") || currentVar == 0) {
-                        str = Console.ReadLine();
-                        if (Program.Check(str)) {
-                            currentVar = Double.Parse(str);
-                        } else {
-                            return;
-                        }          
-                    }
+                   
                     Console.WriteLine(currentVar);
                     currentVar = op.Action(currentVar);
                     
@@ -49,6 +44,7 @@ namespace Lab1
                     }      
                     currentVar = binOp.Action(currentVar, secondVar);
                 break;
+               
                 case "Exit":
                     flag = false;
                     break;
@@ -56,7 +52,21 @@ namespace Lab1
                 case "Clear":
                     currentVar = 0; 
                     break;
-                } 
+                
+                case "Change":
+                    bool numb = true;
+                    Console.WriteLine("Enter value");
+                    while (numb) {
+                        str = Console.ReadLine();
+                        if (Program.Check(str)) {
+                            currentVar = Double.Parse(str);
+                            numb = false;
+                        } else {
+                            Console.WriteLine("Incorrect value");
+                        }        
+                    }
+                    break;
+            }
             Console.WriteLine(currentVar);
             }
         }
