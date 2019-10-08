@@ -22,6 +22,14 @@ namespace Tests
         }
 
         [Test]
+        public void C_InputIs4And2_Return6()
+        {
+            BinaryOp op = new BinaryOp();
+            var result = op.C(4, 2);
+            Assert.AreEqual(result, 6);
+        }
+
+        [Test]
         public void Minus_InputIs5And2_Return3()
         {
             BinaryOp op = new BinaryOp();

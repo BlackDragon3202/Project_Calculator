@@ -15,6 +15,22 @@ namespace Tests
         }
 
         [Test]
+        public void Increment_InputIs4_Return5()
+        {
+            SingleOp op = new SingleOp();
+            var result = op.Increment(4);
+            Assert.AreEqual(result, 5);
+        }
+
+        [Test]
+        public void Decrement_InputIs4_Return3()
+        {
+            SingleOp op = new SingleOp();
+            var result = op.Decrement(4);
+            Assert.AreEqual(result, 3);
+        }
+
+        [Test]
         public void Abs_InputIsMinus4_Return4()
         {
             SingleOp op = new SingleOp();

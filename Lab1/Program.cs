@@ -57,7 +57,7 @@ namespace Lab1
 
                     case "Binary":
                         BinaryOp binOp = new BinaryOp();
-                        Double secondVar;    
+                        Double secondVar;
                         secondVar = queue.Dequeue();
                         currentVar = binOp.Action(currentVar, secondVar);
                         break;
